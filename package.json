@@ -10,8 +10,10 @@
     "run": "node --import tsx tools/run_pipeline.ts",
     "revise": "node --import tsx tools/revise_page.ts",
     "secrets:check": "node --import tsx tools/secrets_check.ts",
+    "setup": "node --import tsx tools/setup_repo.ts",
     "validate:registries": "node --import tsx tools/validate_registries.ts",
-    "scaffold:topics": "node --import tsx tools/scaffold_topics.ts"
+    "scaffold:topics": "node --import tsx tools/scaffold_topics.ts",
+    "cleanup:mac": "node --import tsx tools/cleanup_mac.ts"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",

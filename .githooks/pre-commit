@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+if [ -f tools/precommit_secret_scan.js ]; then
+  node tools/precommit_secret_scan.js
+fi
+
+# Registry validation must pass before commit
+if [ -f tools/validate_registries.ts ]; then
+  npm run validate:registries
+fi
+
+# Block commits if any secrets/ files are tracked
+if git ls-files | grep -q '^secrets/'; then
+  echo "Commit blocked: tracked files under secrets/ detected."
+  exit 1
+fi

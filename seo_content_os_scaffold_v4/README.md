@@ -53,6 +53,31 @@ Beispiele:
 - `npm run page:create -- --tenant example.com --page_id de_service_page_seo-beratung`
 - `npm run run -- --tenant example.com --profile service_de_strict`
 
+## Registry v1 (Canonical)
+- Topic Registry: `shared/topics/v1/topic_registry.csv`
+- Topic Docs: `shared/topics/<topic_id>/v1/topic.md`
+- Assets Registry: `shared/assets/v1/assets_registry.csv`
+
+### How to add a Topic (Kurz-Workflow)
+1) Row in `shared/topics/v1/topic_registry.csv` ergänzen (topic_id, title, status, doc path).
+2) `npm run scaffold:topics` ausführen (erzeugt Ordner + topic.md Skeleton).
+3) `npm run validate:registries` laufen lassen und ggf. Pfade/Frontmatter fixen.
+
+### Validate before commit
+Bitte vor Commit ausführen:
+- `npm run validate:registries`
+Optional: Secret-Scan über Git Hook (`.githooks/pre-commit`) oder gitleaks.
+
+### One-command setup
+Für frische Clones:
+- `npm run setup`
+  - setzt `core.hooksPath` auf `.githooks`
+  - führt `npm run validate:registries` aus
+  - bricht ab, wenn `secrets/**` getrackt ist
+
+### macOS Cleanup (optional)
+- `npm run cleanup:mac` (löscht `.DS_Store` außerhalb `node_modules`)
+
 ## Connectors & Preflight
 - Registry: `shared/connectors/v1/connectors_registry.csv`
 - Preflight läuft vor jedem Run und schreibt:

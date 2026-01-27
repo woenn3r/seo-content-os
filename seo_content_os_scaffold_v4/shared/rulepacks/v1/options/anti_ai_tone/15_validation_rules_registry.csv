@@ -1,0 +1,3 @@
+rule_id,severity,scope,applies_to,page_types,languages,intents,check_name,params_json,message,fix_instructions,source_url,version,enabled,notes
+ANTI_AI_BANNED_PHRASES,warn,page,page,*,*,*,anti_ai_banned_phrases,"{""phrases"":[""in der heutigen schnelllebigen welt"",""lassen sie uns eintauchen"",""begeben wir uns auf eine reise"",""tauchen wir ein""]}","Banned phrases detected.","Remove generic filler phrases.",,v1,yes,
+ANTI_AI_FLUFF_MARKERS,warn,page,page,*,*,*,anti_ai_fluff_markers,"{""markers"":[""revolutionieren"",""game changer"",""ultimativ"",""bahnbrechend"",""weltklasse""]}","Fluff markers detected.","Reduce hype language and fluff.",,v1,yes,

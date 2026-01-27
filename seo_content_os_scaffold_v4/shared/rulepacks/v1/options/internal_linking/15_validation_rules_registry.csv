@@ -1,0 +1,8 @@
+rule_id,severity,scope,applies_to,page_types,languages,intents,check_name,params_json,message,fix_instructions,source_url,version,enabled,notes
+INTERNAL_LINK_MIN_OUTBOUND,warn,page,page,*,*,*,internal_links_min_outbound,"{""min"":2}","Not enough outbound internal links.","Add at least 2 internal links.",,v1,yes,
+OUTBOUND_LINKS_NO_EMPTY,fail,page,page,*,*,*,outbound_links_no_empty,,"Outbound internal links missing required fields.","Ensure each outbound link has label, url, type, and reason.",,v1,yes,
+NO_EXTERNAL_IN_INTERNAL_LINKS,fail,page,page,*,*,*,outbound_links_no_external,,"Outbound internal links include external URLs.","Use internal/relative URLs only for outbound internal links.",,v1,yes,
+CONTACT_LINK_PRESENT,warn,page,page,service_page,*,*,contact_link_present,"{""contact_paths"":[""/kontakt"",""/contact""]}","Contact link missing from outbound internal links.","Add a contact link in outbound internal links.",,v1,yes,
+INTERNAL_LINK_SOURCE_CONTEXT_FORMAT,fail,page,page,*,*,*,internal_link_source_context_format,,"Outbound link source_context format invalid.","Use section:<id>, cta:<position>, body, or faq:<index>.",,v1,yes,
+SECTION_LINK_SOURCE_CONTEXT_MATCH,fail,page,page,*,*,*,section_link_source_context_match,,"Section link source_context does not match section id.","Ensure section:<id> uses an existing section id.",,v1,yes,
+CONTACT_LINK_CANONICALIZED,warn,page,page,service_page,*,*,contact_link_canonicalized,,"Contact link not canonicalized.","Use canonical contact URL for the tenant language.",,v1,yes,

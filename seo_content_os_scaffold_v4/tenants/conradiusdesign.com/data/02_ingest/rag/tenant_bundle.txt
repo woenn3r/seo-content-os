@@ -1,0 +1,48 @@
+## Offer Catalog
+{"offer_id":"seo-beratung","language":"de","offer_name":"SEO Beratung","category":"","short_promise":"Schnell","detailed_description":"Transparent, Messbar","ideal_customer":"","primary_cta":"Jetzt anfragen","secondary_cta":"Mehr erfahren","proof_assets":"Case Study A,Testimonial B","pricing_notes":"ab 1000 EUR","constraints":"","notes":""}
+{"offer_id":"seo-beratung","language":"de","offer_name":"SEO Beratung","category":"","short_promise":"","detailed_description":"","ideal_customer":"","primary_cta":"Jetzt anfragen","secondary_cta":"Mehr erfahren","proof_assets":"Case Study A,Testimonial B","pricing_notes":"ab 1000 EUR","constraints":"","notes":""}
+{"offer_id":"seo-beratung","language":"de","offer_name":"SEO Beratung","category":"","short_promise":"","detailed_description":"","ideal_customer":"","primary_cta":"Jetzt anfragen","secondary_cta":"Mehr erfahren","proof_assets":"Case Study A,Testimonial B","pricing_notes":"ab 1000 EUR","constraints":"","notes":""}
+{"offer_id":"seo-beratung","language":"de","offer_name":"SEO Beratung","category":"","short_promise":"","detailed_description":"","ideal_customer":"","primary_cta":"Jetzt anfragen","secondary_cta":"Mehr erfahren","proof_assets":"Case Study A,Testimonial B","pricing_notes":"ab 1000 EUR","constraints":"","notes":""}
+{"offer_id":"seo-beratung","language":"de","offer_name":"SEO Beratung","category":"","short_promise":"","detailed_description":"","ideal_customer":"","primary_cta":"Jetzt anfragen","secondary_cta":"Mehr erfahren","proof_assets":"Case Study A,Testimonial B","pricing_notes":"ab 1000 EUR","constraints":"","notes":""}
+{"offer_id":"seo-beratung","language":"de","offer_name":"SEO Beratung","category":"","short_promise":"","detailed_description":"","ideal_customer":"","primary_cta":"Jetzt anfragen","secondary_cta":"Mehr erfahren","proof_assets":"Case Study A,Testimonial B","pricing_notes":"ab 1000 EUR","constraints":"","notes":""}
+{"offer_id":"seo-beratung","language":"de","offer_name":"SEO Beratung","category":"","short_promise":"","detailed_description":"","ideal_customer":"","primary_cta":"Jetzt anfragen","secondary_cta":"Mehr erfahren","proof_assets":"Case Study A,Testimonial B","pricing_notes":"ab 1000 EUR","constraints":"","notes":""}
+
+## Brand Voice
+{"rule_id":"ws_tov_adjectives_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"klar","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_2","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"präzise","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_do_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Konkrete Beispiele nennen","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_dont_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Vage Versprechen","examples_allowed":"","notes":""}
+{"rule_id":"ws_banned_claims_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Beste Agentur weltweit","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"klar","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_2","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"präzise","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_do_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Konkrete Beispiele nennen","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_dont_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Vage Versprechen","examples_allowed":"","notes":""}
+{"rule_id":"ws_banned_claims_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Beste Agentur weltweit","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"klar","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_2","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"präzise","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_do_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Konkrete Beispiele nennen","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_dont_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Vage Versprechen","examples_allowed":"","notes":""}
+{"rule_id":"ws_banned_claims_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Beste Agentur weltweit","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"klar","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_2","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"präzise","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_do_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Konkrete Beispiele nennen","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_dont_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Vage Versprechen","examples_allowed":"","notes":""}
+{"rule_id":"ws_banned_claims_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Beste Agentur weltweit","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"klar","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_2","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"präzise","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_do_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Konkrete Beispiele nennen","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_dont_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Vage Versprechen","examples_allowed":"","notes":""}
+{"rule_id":"ws_banned_claims_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Beste Agentur weltweit","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"klar","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_2","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"präzise","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_do_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Konkrete Beispiele nennen","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_dont_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Vage Versprechen","examples_allowed":"","notes":""}
+{"rule_id":"ws_banned_claims_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Beste Agentur weltweit","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"klar","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_adjectives_2","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"präzise","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_do_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Konkrete Beispiele nennen","examples_allowed":"","notes":""}
+{"rule_id":"ws_tov_dont_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Vage Versprechen","examples_allowed":"","notes":""}
+{"rule_id":"ws_banned_claims_1","language":"de","scope":"global","severity":"warn","rule_type":"intake","rule_text":"Beste Agentur weltweit","examples_allowed":"","notes":""}
+
+## Site Snapshot
+{"url":"https://example.com/","language":"de","region":"default","canonical_url":"https://example.com/","meta_title":"SEO Beratung Beispiel","meta_description":"Stub description for crawl snapshot.","h1":"SEO Beratung","headings_h2":"Leistungen||Vorgehen","headings_h3":"Audit||Optimierung","main_text":"Stub main text for crawl snapshot.","word_count":"6","content_hash":"stub_hash","extracted_at":"2026-01-26T12:26:32.800Z","notes":"stub"}

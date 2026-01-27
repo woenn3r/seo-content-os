@@ -1,0 +1,2 @@
+rule_id,severity,scope,applies_to,page_types,languages,intents,check_name,params_json,message,fix_instructions,source_url,version,enabled,notes
+SCHEMA_JSONLD_PRESENT,fail,page,page,*,*,*,schema_jsonld_present,,"Schema JSON-LD missing.","Add JSON-LD schema for this page.",,v1,yes,

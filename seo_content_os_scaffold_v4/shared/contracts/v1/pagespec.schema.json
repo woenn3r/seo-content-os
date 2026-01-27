@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PageSpec v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "page_id",
+    "page_type",
+    "language",
+    "region",
+    "primary_keyword",
+    "intent",
+    "offer_id"
+  ],
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "target_url": {
+      "type": "string"
+    },
+    "page_type": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "cluster_id": {
+      "type": "string"
+    },
+    "primary_keyword": {
+      "type": "string"
+    },
+    "secondary_keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "intent": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "offer_id": {
+      "type": "string"
+    },
+    "usps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proof_assets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "primary_cta": {
+      "type": "string"
+    },
+    "internal_links_out": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "must_include_points": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "must_avoid_points": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "compliance_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_material_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "awareness_stage": {
+      "type": "string"
+    },
+    "pain_points": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "objections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pricing_notes": {
+      "type": "string"
+    },
+    "secondary_cta": {
+      "type": "string"
+    },
+    "faq_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

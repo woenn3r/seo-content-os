@@ -1,0 +1,1 @@
+base_url,crawl_mode,sitemap_url,include_paths,exclude_paths,exclude_url_params,max_depth,max_urls,rate_limit_rps,timeout_ms,snapshot_ttl_hours,user_agent,respect_robots,render_js,auth_mode,cookies_file_path,enabled

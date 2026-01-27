@@ -1,0 +1,22 @@
+{
+  "run_id": "2026-01-26T14-48-30Z",
+  "profile_id": "service_de_strict",
+  "packs": [
+    "rules_global_v1",
+    "rules_page_service_page_v1",
+    "opt_internal_linking_v1",
+    "opt_anti_ai_tone_v1",
+    "opt_schema_strict_v1",
+    "opt_international_seo_v1"
+  ],
+  "blocking_policy": {
+    "fail": "block",
+    "warn": "allow"
+  },
+  "site_state": "existing",
+  "snapshot_used": true,
+  "snapshot_reason": "snapshot_fresh",
+  "qa_report_path": "/Users/janikahler/Desktop/AntiGravity/content-erstellen/seo_content_os_scaffold_v4/tenants/conradiusdesign.com/content_library/pages/Wie lange dauert SEO?,,,Ergebnis,Billig,/unknown/qa_report.json",
+  "qa_checks_log_path": "/Users/janikahler/Desktop/AntiGravity/content-erstellen/seo_content_os_scaffold_v4/runs/2026-01-26T14-48-30Z/conradiusdesign.com/pages/Wie lange dauert SEO?,,,Ergebnis,Billig,/unknown/qa_checks_log.json",
+  "created_at": "2026-01-26T14:48:31.533Z"
+}

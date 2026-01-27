@@ -1,0 +1,15 @@
+page_type,intent,language,region,enabled_packs,severity_overrides_json,notes
+*,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1,"{""warn_to_fail_rules"": [""SPAM_KEYWORD_STUFFING"", ""TONE_NO_CLICKBAIT""]}",Default: global rules + anti_ai_tone + internal_linking + strict overrides.
+homepage,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1,,Homepage: baseline packs.
+about_page,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_eeat_blocks_v1,,About: E-E-A-T blocks empfohlen.
+contact_page,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_schema_strict_v1,,Contact: Schema strict empfohlen (Organization/ContactPoint).
+service_page,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_schema_strict_v1,,Service: Schema strict empfohlen (Service/Organization).
+blog_guide,informational,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_eeat_blocks_v1,,Blog/Guide informational: E-E-A-T blocks.
+blog_guide,commercial,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_eeat_blocks_v1,,Blog/Guide commercial: E-E-A-T blocks + CTA.
+faq_page,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_schema_strict_v1,,FAQ: Schema strict (FAQPage) meist sinnvoll.
+comparison_page,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1,,Comparison: baseline packs; schema optional je nach Setup.
+docs_page,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_eeat_blocks_v1,,"Docs/KB: E-E-A-T optional, depends on product."
+local_landing,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_local_seo_v1;opt_schema_strict_v1,,Local landing: local_seo + schema_strict.
+category_page,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_ecommerce_v1;opt_schema_strict_v1,,Category: ecommerce + schema_strict.
+product_page,*,*,*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_ecommerce_v1;opt_schema_strict_v1,,Product: ecommerce + schema_strict.
+*,*,"de,en",*,rules_global_v1;opt_anti_ai_tone_v1;opt_internal_linking_v1;opt_international_seo_v1,,Wenn Run Profile DE+EN nutzt: international_seo aktivieren.

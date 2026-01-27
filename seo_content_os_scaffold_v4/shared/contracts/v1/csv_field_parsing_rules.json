@@ -1,0 +1,16 @@
+{
+  "secondary_keywords": { "type": "array", "delimiter": ",", "trim": true, "allow_empty": false },
+  "internal_links_out": { "type": "array", "delimiter": ",", "trim": true, "allow_empty": false },
+  "proof_assets": { "type": "array", "delimiter": ",", "trim": true, "allow_empty": false },
+  "source_material_urls": { "type": "array", "delimiter": ",", "trim": true, "allow_empty": false },
+  "must_include_points": { "type": "array", "delimiter": "\\n", "trim": true, "allow_empty": false },
+  "must_avoid_points": { "type": "array", "delimiter": "\\n", "trim": true, "allow_empty": false },
+  "pain_points": { "type": "array", "delimiter": "\\n", "trim": true, "allow_empty": false },
+  "objections": { "type": "array", "delimiter": "\\n", "trim": true, "allow_empty": false },
+  "faq_questions": { "type": "array", "delimiter": "\\n", "trim": true, "allow_empty": false },
+  "entities": { "type": "array", "delimiter": ",", "trim": true, "allow_empty": false },
+  "usps": { "type": "array", "delimiter": ",", "trim": true, "allow_empty": false },
+  "compliance_constraints": { "type": "array", "delimiter": "\\n", "trim": true, "allow_empty": false },
+  "headings_h2": { "type": "array", "delimiter": "||", "trim": true, "allow_empty": false },
+  "headings_h3": { "type": "array", "delimiter": "||", "trim": true, "allow_empty": false }
+}

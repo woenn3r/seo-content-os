@@ -1,0 +1,2 @@
+url,language,region,canonical_url,meta_title,meta_description,h1,headings_h2,headings_h3,main_text,word_count,content_hash,extracted_at,notes
+https://example.com/,de,default,https://example.com/,SEO Beratung Beispiel,Stub description for crawl snapshot.,SEO Beratung,Leistungen||Vorgehen,Audit||Optimierung,Stub main text for crawl snapshot.,6,stub_hash,2026-01-26T12:26:32.800Z,stub

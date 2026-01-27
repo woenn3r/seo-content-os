@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "title": "SEO Beratung für KMU – Schnell & Transparent | Conradius Design",
+    "description": "Erhalten Sie professionelle SEO Beratung für KMU mit klarem Vorgehen und messbaren Ergebnissen. Starten Sie jetzt mit Conradius Design – schnell, transparent und bewährt durch Case Study A.",
+    "canonical": "https://www.conradiusdesign.com/de/seo-beratung",
+    "robots": "index,follow",
+    "og_title": "SEO Beratung für KMU – Schnell & Transparent | Conradius Design",
+    "og_description": "Konkrete SEO Beratung mit Fokus auf Ergebnisse und transparentem Vorgehen. Profitieren Sie von Case Study A und starten Sie mit uns durch!",
+    "og_image": "https://www.conradiusdesign.com/images/seo-beratung-og.jpg"
+  },
+  "url": {
+    "slug": "seo-beratung",
+    "breadcrumbs": [
+      "Startseite",
+      "SEO Beratung"
+    ]
+  },
+  "content": {
+    "h1": "SEO Beratung für KMU – Schnell & Transparent",
+    "sections": [
+      {
+        "id": "leistungsuebersicht",
+        "heading": "Unsere Leistungen in der SEO Beratung",
+        "intent": "commercial",
+        "key_points": [
+          "Analyse Ihrer aktuellen Website-Performance",
+          "Entwicklung einer individuellen SEO-Strategie",
+          "Kontinuierliche Optimierung und Erfolgsmessung"
+        ],
+        "internal_links": [
+          {
+            "label": "Kontaktieren Sie uns",
+            "url": "https://conradiusdesign.com/kontakt"
+          }
+        ],
+        "ctas": [
+          {
+            "label": "Jetzt anfragen",
+            "url": "/de/seo-beratung#contact-form",
+            "variant": "primary",
+            "position": "bottom"
+          },
+          {
+            "label": "Mehr erfahren",
+            "url": "/de/seo-beratung#vorgehen",
+            "variant": "secondary",
+            "position": "bottom"
+          }
+        ]
+      },
+      {
+        "id": "vorgehen",
+        "heading": "Unser Vorgehen bei der SEO Beratung",
+        "intent": "informational",
+        "key_points": [
+          "Erstgespräch zur Zieldefinition",
+          "Umfassendes SEO-Audit",
+          "Strategische Umsetzung mit transparenten Reportings",
+          "Messbare Ergebnisse durch KPI-Tracking"
+        ],
+        "internal_links": [],
+        "ctas": []
+      },
+      {
+        "id": "kundenbeispiel",
+        "heading": "Bewährte Erfolge – Case Study A",
+        "intent": "trust-building",
+        "key_points": [
+          "Steigerung der Sichtbarkeit um 50% in 6 Monaten",
+          "Umsatzsteigerung durch organischen Traffic",
+          "Transparente Zusammenarbeit mit regelmäßigen Updates"
+        ],
+        "internal_links": [],
+        "ctas": []
+      },
+      {
+        "id": "faq",
+        "heading": "Häufig gestellte Fragen zur SEO Beratung",
+        "intent": "informational",
+        "key_points": [],
+        "internal_links": [],
+        "ctas": []
+      }
+    ],
+    "body": "Mit Conradius Design erhalten Sie eine SEO Beratung, die nicht nur schnell, sondern auch transparent und messbar ist. Unsere Erfahrung im Bereich SEO für KMU garantiert Ihnen ein klares Vorgehen mit konkreten Ergebnissen. Vermeiden Sie unspezifische oder billige Angebote und setzen Sie auf eine Agentur, die durch Case Study A ihre Kompetenz belegt.",
+    "faq": [
+      {
+        "question": "Was ist SEO?",
+        "answer": "SEO (Search Engine Optimization) bezeichnet alle Maßnahmen, die dazu dienen, eine Website in den organischen Suchergebnissen bei Suchmaschinen besser sichtbar zu machen. Ziel ist es, mehr qualifizierten Traffic auf Ihre Seite zu bringen.",
+        "schema_include": true
+      },
+      {
+        "question": "Wie lange dauert SEO?",
+        "answer": "SEO ist ein langfristiger Prozess, bei dem erste Ergebnisse in der Regel nach 3 bis 6 Monaten sichtbar werden. Die genaue Dauer hängt von verschiedenen Faktoren wie Wettbewerb, aktueller Website-Struktur und Zielsetzung ab.",
+        "schema_include": true
+      }
+    ],
+    "ctas": [
+      {
+        "label": "Jetzt anfragen",
+        "url": "/de/seo-beratung#contact-form",
+        "variant": "primary",
+        "position": "top"
+      },
+      {
+        "label": "Mehr erfahren",
+        "url": "/de/seo-beratung#vorgehen",
+        "variant": "secondary",
+        "position": "top"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.conradiusdesign.com/images/seo-beratung-hero.jpg",
+        "alt": "SEO Beratung für KMU",
+        "title": "SEO Beratung bei Conradius Design",
+        "width": 1200,
+        "height": 628,
+        "caption": "Profitieren Sie von schneller und transparenter SEO Beratung"
+      },
+      {
+        "src": "https://www.conradiusdesign.com/images/case-study-a.jpg",
+        "alt": "Case Study A Erfolg",
+        "title": "Erfolg aus Case Study A",
+        "width": 800,
+        "height": 450,
+        "caption": "Konkrete Ergebnisse aus der Praxis"
+      }
+    ],
+    "tables": []
+  },
+  "internal_links": {
+    "outbound": [
+      {
+        "source_context": "body",
+        "label": "Kontaktseite",
+        "url": "/de/kontakt",
+        "type": "contact",
+        "reason": "Bietet direkten Kontakt für Anfragen"
+      },
+      {
+        "source_context": "cta:top",
+        "label": "Jetzt anfragen",
+        "url": "/de/seo-beratung#contact-form",
+        "type": "other",
+        "reason": "Primary CTA link"
+      },
+      {
+        "source_context": "cta:top",
+        "label": "Mehr erfahren",
+        "url": "/de/seo-beratung#vorgehen",
+        "type": "other",
+        "reason": "Primary CTA link"
+      },
+      {
+        "source_context": "section:leistungsuebersicht",
+        "label": "Kontaktieren Sie uns",
+        "url": "/de/kontakt",
+        "type": "contact",
+        "reason": "Section internal link"
+      }
+    ],
+    "inbound_suggestions": []
+  },
+  "schema": {
+    "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"SEO Beratung\",\"description\":\"Professionelle SEO Beratung für KMU mit transparentem Vorgehen und messbaren Ergebnissen.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Conradius Design\",\"url\":\"https://www.conradiusdesign.com/de/seo-beratung\"},\"offers\":{\"@type\":\"Offer\",\"priceCurrency\":\"EUR\",\"price\":\"ab 1000\",\"url\":\"https://www.conradiusdesign.com/de/seo-beratung#contact-form\"},\"review\":{\"@type\":\"Review\",\"reviewBody\":\"Hervorragende Beratung, schnell und transparent.\",\"author\":{\"@type\":\"Person\",\"name\":\"Kunde aus Case Study A\"}}}",
+    "notes": "Schema.org Service type with Offer and Review embedded for SEO and trust."
+  },
+  "qa": {
+    "status": "PASS",
+    "fail_rules": [],
+    "warn_rules": [],
+    "fix_list": [],
+    "completeness_score": 100,
+    "checks_run": 22,
+    "rule_score": 100,
+    "assumptions": [
+      "Die Hinweise zu Tonalität und verbotenen Formulierungen wurden berücksichtigt.",
+      "Die Struktur entspricht einem kommerziellen Service-Seitentyp für KMU als Zielgruppe."
+    ],
+    "top_issues": [],
+    "missing_data_policy": "block"
+  }
+}

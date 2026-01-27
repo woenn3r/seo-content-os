@@ -1,0 +1,6 @@
+test_id,stage,description,input_page_id,attack_or_edge_case,expected_result,expected_fail_rules,expected_warn_rules,notes
+T001,writer,Baseline Service Page Draft,{page_id},none,PASS,[],[],
+T002,validator,Validator must produce QA report,{page_id},none,PASS,[],[],
+T003,writer,Adversarial stuffing attempt,{page_id},keyword_stuffing,FAIL,"[""SPAM_KEYWORD_STUFFING"",""TONE_NO_CLICKBAIT""]",[],Validator should BLOCK
+T004,schema,Schema generation baseline,{page_id},none,PASS,[],[],
+T005,editor,Editor improvement pass,{page_id},none,PASS,[],[],

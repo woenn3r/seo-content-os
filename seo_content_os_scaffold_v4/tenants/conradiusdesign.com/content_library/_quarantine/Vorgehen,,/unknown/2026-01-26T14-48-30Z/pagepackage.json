@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Vorgehen,, | Service",
+    "description": "Stub description for Vorgehen,,.",
+    "robots": "index,follow"
+  },
+  "url": {
+    "slug": "/Vorgehen,,",
+    "breadcrumbs": [
+      "Vorgehen,,"
+    ]
+  },
+  "content": {
+    "h1": "Vorgehen,,",
+    "sections": [],
+    "body": "Stub content for Vorgehen,,."
+  },
+  "internal_links": {
+    "outbound": [],
+    "inbound_suggestions": []
+  },
+  "schema": {
+    "jsonld": "{}",
+    "notes": "stub"
+  },
+  "qa": {
+    "status": "BLOCK",
+    "fail_rules": [
+      "SLUG_FORMAT"
+    ],
+    "warn_rules": [
+      "TITLE_PRIMARY_KEYWORD",
+      "META_DESCRIPTION_PRIMARY_KEYWORD",
+      "SLUG_PRIMARY_KEYWORD",
+      "H1_PRIMARY_KEYWORD",
+      "KEYWORD_STUFFING",
+      "DUPLICATE_CONTENT_RISK",
+      "CANNIBALIZATION_CONFLICT"
+    ],
+    "fix_list": [
+      {
+        "rule_id": "TITLE_PRIMARY_KEYWORD",
+        "message": "Not checked: missing data.",
+        "evidence": {
+          "field": "title"
+        }
+      },
+      {
+        "rule_id": "META_DESCRIPTION_PRIMARY_KEYWORD",
+        "message": "Not checked: missing data.",
+        "evidence": {
+          "field": "meta_description"
+        }
+      },
+      {
+        "rule_id": "SLUG_FORMAT",
+        "message": "Slug format invalid.",
+        "fix_instructions": "Use lowercase letters, numbers, and hyphens only; keep slug short.",
+        "evidence": {
+          "slug": "/Vorgehen,,",
+          "maxLength": 80
+        }
+      },
+      {
+        "rule_id": "SLUG_PRIMARY_KEYWORD",
+        "message": "Not checked: missing data.",
+        "evidence": {
+          "field": "slug"
+        }
+      },
+      {
+        "rule_id": "H1_PRIMARY_KEYWORD",
+        "message": "Not checked: missing data.",
+        "evidence": {
+          "field": "h1"
+        }
+      },
+      {
+        "rule_id": "KEYWORD_STUFFING",
+        "message": "Not checked: missing data.",
+        "evidence": {
+          "field": "body"
+        }
+      },
+      {
+        "rule_id": "DUPLICATE_CONTENT_RISK",
+        "message": "Not checked: missing data.",
+        "evidence": {
+          "field": "duplicate_report"
+        }
+      },
+      {
+        "rule_id": "CANNIBALIZATION_CONFLICT",
+        "message": "Not checked: missing data.",
+        "evidence": {
+          "field": "cannibalization_report"
+        }
+      }
+    ],
+    "completeness_score": 100,
+    "assumptions": [
+      "Stub generator"
+    ],
+    "checks_run": 11,
+    "rule_score": 27
+  }
+}

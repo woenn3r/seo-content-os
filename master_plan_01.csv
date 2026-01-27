@@ -1,0 +1,464 @@
+Master-Plan: SEO Content OS (Multi-Website, alle Page-Types, alle Outputs)
+0) Grundprinzipien, die das System erzwingen muss
+
+P0. Orchestrator ist Chef (Code entscheidet), nicht das LLM.
+LLM schreibt/editiert, aber Validator + Gates entscheiden, ob etwas “FINAL” wird.
+
+P1. Keine erfundenen Fakten.
+Wenn Daten fehlen, muss das System entweder:
+
+a) ehrlich generisch bleiben (ohne Zahlen/Claims), oder
+
+b) Output als NEEDS_INPUT markieren (kein FINAL).
+
+P2. “Best practice” bedeutet: People-first + keine Spam-Patterns.
+Google: helpful, reliable, people-first; keine Manipulation/Spam-Taktiken.
+
+P3. Reproduzierbarkeit / Qualitätssicherung.
+Alles versioniert: Inputs, Rules, Blueprints, Prompts, Modell-Snapshot, Outputs, QA-Reports.
+
+1) Unterstützte Seitentypen: vollständiger Katalog (alle)
+
+Damit “alle Seitentypen” sauber abbildbar sind, definierst du PageType-Contracts (Blueprint + Rules + Output-Module). Hier ist der vollständige Katalog, den das System unterstützen soll:
+
+A) Core / Brand
+
+Homepage
+
+About / Über uns
+
+Contact / Kontakt
+
+Team / People / Autorenübersicht
+
+Locations / Standorte (Hub)
+
+Testimonials / Reviews (Hub)
+
+Press / Medien / PR
+
+Partners / Affiliate / Reseller
+
+Careers / Jobs
+
+Legal: Impressum, Datenschutz, AGB, Cookie-Richtlinie (SEO-neutral, aber Pflicht)
+
+B) Service & Lead Gen (Agentur/SaaS/B2B)
+
+Service Page (Einzelleistung)
+
+Service Cluster Hub (Leistungsübersicht)
+
+Feature Page (SaaS Feature)
+
+Use-Case Page (Industrie/Problem)
+
+Industry / Vertical Page
+
+Integration Page
+
+Pricing Page
+
+Landing Page (Campaign / Paid / Email)
+
+Webinar / Demo / Consultation Page
+
+Booking Page (Termin)
+
+Comparison: “X vs Y”
+
+Alternatives: “Alternativen zu X”
+
+“Best of” / Shortlist Pages (mit Vorsicht/Policy)
+
+C) Content / Editorial
+
+Blog Post
+
+Guide / Ultimate Guide
+
+Tutorial / How-to
+
+Checklist / SOP
+
+Opinion / Thought Leadership
+
+Case Study (Projektbericht)
+
+Portfolio / Work Showcase
+
+Whitepaper / E-Book Landing
+
+Glossary Hub / Glossary Term
+
+FAQ Hub / FAQ Page
+
+Resources Hub
+
+Templates / Downloads
+
+D) Local SEO
+
+Local Landing Page (Stadt/Region)
+
+Service + Location Kombi
+
+Multi-Location Index + einzelne Location Pages
+
+E) E-Commerce / Catalog (falls später)
+
+Category / Collection
+
+Product Page
+
+Product Variant Page
+
+Brand Page
+
+Deals / Sale
+
+Comparison (Produkte)
+
+Buying Guide
+
+F) Support / Docs (SaaS/Tech)
+
+Knowledge Base Article
+
+Documentation Page
+
+API Reference Page
+
+Troubleshooting Page
+
+Release Notes / Changelog
+
+G) Media
+
+Video Page
+
+Podcast Episode
+
+Event Page (Konferenz/Meetup)
+
+Gallery / Image Hub
+
+Hinweis: “Alle Page Types” heißt nicht “alles sofort bauen”, aber der Master-Plan enthält sie vollständig. Implementiert wird es über Contracts + Blueprints + Rule activation per page_type.
+
+2) Output-Contract: “Alles” was das System ausgeben können muss
+
+Das System erzeugt nie “nur Text”, sondern ein PagePackage (strukturierter Output), damit Exports (Next.js/Webflow/WP) immer funktionieren.
+
+2.1 PagePackage (Pflicht-Module – immer vorhanden)
+
+Meta
+
+meta_title
+
+meta_description
+
+canonical_url (oder rule: derive)
+
+robots_meta (index/noindex, follow/nofollow)
+
+og_title / og_description / og_image (optional ableitbar)
+
+twitter_card (optional)
+
+URL
+
+slug (oder full path)
+
+breadcrumb (optional)
+
+Content Structure
+
+H1
+
+Outline: H2/H3… (hierarchisch)
+
+Body Content (vollständig, section-weise)
+
+CTA Blocks (primary/secondary, placement)
+
+Internal Linking
+
+internal_links_out (target + anchor + placement_hint)
+
+suggested_internal_links_in (optional, aus Linkgraph)
+
+Schema
+
+schema_jsonld (ein oder mehrere Graph-Nodes)
+
+schema_validation_notes
+
+Assets / On-Page
+
+image_suggestions (inkl. alt_text pro Bild)
+
+table_suggestions (wenn sinnvoll)
+
+FAQ block (wenn sinnvoll, sonst leer + reason)
+
+QA Report
+
+pass_fail_status (PASS/WARN/BLOCK)
+
+violated_rules (fail + warn)
+
+fix_list (konkret, maschinenlesbar)
+
+completeness_score
+
+assumptions (immer leer oder explizit)
+
+2.2 PagePackage (optionale Module – je PageType aktivierbar)
+
+Author box + E-E-A-T Proof Snippets (wenn vorhanden)
+
+Citations/Sources (wenn ihr mit Quellen arbeitet)
+
+Content refresh meta (last_updated, review_date)
+
+Product blocks (Price, SKU, availability)
+
+Local blocks (NAP, map embed hints)
+
+Testimonials blocks
+
+Comparison tables
+
+Download lead magnet blocks
+
+Compliance disclaimers (je Branche)
+
+Warum strukturiert? Damit ihr per Structured Outputs (JSON Schema) erzwingen könnt, dass Felder nie fehlen und Exports automatisierbar sind.
+
+3) Daten-Ebenen: Das System muss mit “wenig” und “viel” Daten perfekt laufen
+
+Wir definieren Data Tiers (und das System entscheidet automatisch, wie streng es sein darf):
+
+Tier 0 (Minimum für “Draft”, aber nicht FINAL)
+
+page_type, language/region
+
+primary_keyword, intent
+
+offer_id oder page_goal
+
+basic brand voice (default)
+
+→ Output: DRAFT + NEEDS_INPUT, kein FINAL.
+
+Tier 1 (Minimum für “FINAL” in vielen Fällen)
+
+Zusätzlich:
+
+USPs + 1–3 proof assets (auch “ohne Zahlen”, z.B. Referenzen/Prozess)
+
+Blueprint vollständig befüllbar (must_include_points)
+
+Interne Linkziele (mindestens 2–5)
+
+→ Output: FINAL möglich (PASS).
+
+Tier 2 (Expert Mode)
+
+Zusätzlich:
+
+SERP/SEMrush Notizen (Top-Angles, Features, FAQs)
+
+GSC Queries, Existing page issues
+
+Entity catalog (Organization/Person/Product)
+
+Pricing notes/objections
+
+→ Output: deutlich stärkere Relevanz/Conversion, mehr “Expert-Look”.
+
+Wichtig: Wenn Proof/Details fehlen, darf das System keine Zahlen/Behauptungen erfinden (Validator FAIL).
+
+4) Rule System: “Best Practice” als FAIL/WARN – Severity Matrix
+
+Ihr braucht tausende Micro-Regeln, ja – aber sie müssen kategorisiert sein und sauber aktivierbar (global + per page_type + per language + per intent).
+
+4.1 Kategorien (vollständig)
+
+Policy/Spam-Risiko (FAIL)
+
+keyword stuffing, scaled content abuse, site reputation abuse patterns etc.
+
+Indexation & Crawl (FAIL)
+
+canonical/robots Konflikte
+
+broken internal links (crawler)
+
+nicht crawlbare Links, die eure IA zerstören
+
+URL/Slug Hygiene (meist WARN, manche FAIL)
+
+URL-Struktur verständlich, audience language, hyphens etc.
+
+FAIL nur bei klar kaputten Fällen (leer, Sonderzeichen-Chaos, Doppelpfade, etc.)
+
+Title/Meta Quality (meist WARN, manche FAIL)
+
+FAIL: leer, duplicate, irreführend
+
+WARN: “zu lang/zu kurz” heuristisch (kein starres Google-Limit)
+
+Content Structure & Completeness (FAIL)
+
+Pflicht-Sections fehlen (Blueprint)
+
+fehlende CTAs (wenn page_goal = lead)
+
+fehlende FAQ (wenn page_type = FAQ) etc.
+
+Content Integrity (FAIL)
+
+erfundene Fakten/Claims
+
+widersprüchliche Aussagen vs PageSpec/OfferCatalog
+
+Tone of Voice & Style (meist WARN, manchmal FAIL)
+
+FAIL wenn “Sie/Du” falsch oder verbotene Claims
+
+WARN bei “klingt generisch/zu glatt”, “zu viele Floskeln”
+
+Internal Linking Strategy (WARN/FAIL je Profil)
+
+FAIL in strict_production, wenn Money-Pages nicht verlinkt werden (sofern definiert)
+
+Schema & Entity Consistency (FAIL)
+
+Schema widerspricht sichtbarem Content
+
+missing required properties (wenn Type aktiviert)
+
+irreführendes Markup (Policy)
+
+Internationalization (WARN/FAIL)
+
+hreflang-Set unvollständig (wenn site multilingual)
+
+locale mismatch (strict: FAIL)
+
+International SEO wird als Option-Pack international_seo gepflegt und über Run Profiles aktiviert.
+
+4.2 Best-Practice Severity Defaults
+
+FAIL: Policy/Spam, Indexation/Crawl Breaks, Pflicht-Sections fehlen, erfundene Fakten, Schema-Widerspruch
+
+WARN: Zeichenlängen-Heuristiken (Title/H1/Meta), “bessere” Wortwahl, “mehr Beispiele”, “bessere Übergänge”
+
+INFO: nice-to-have Optimierungen (z.B. zusätzliche Tabellen, TOC)
+
+5) Blueprints: Pflicht-Sections pro PageType (alle)
+
+Jeder PageType bekommt:
+
+Required Sections + Reihenfolge
+
+min/max words je Section
+
+“must include” points
+
+CTA placement rules
+
+FAQ & Schema activation rules
+
+Beispiel (Konzept, ohne Inhalte):
+
+Service Page: Hero → Problem → Lösung/Ansatz → Leistungen/Scope → Prozess → Proof → FAQ → CTA
+
+Blog/Guide: Intro → Definition/Context → Schritte/Methoden → Beispiele → FAQ → Next Steps/CTA
+
+(Die Blueprints liegen bei euch als Daten – nicht im Prompt.)
+
+6) OpenAI Integration: stabile, skalierbare Architektur (Responses API)
+
+Empfohlen: Responses API + Structured Outputs + Tools
+
+Responses API ist die empfohlene API für neue Projekte.
+
+Structured Outputs erzwingt JSON Schema-Outputs (PagePackage).
+
+Tool/Function Calling bindet eure Datenquellen an (PageSpec, Rules, Blueprints).
+
+Assistants API ist deprecated (zeitlich auslaufend), daher nicht als Basis wählen.
+
+Rollen (Stages) – immer gleich
+
+Planner (Brief)
+
+Writer (Draft)
+
+Editor (Humanize + Conversion)
+
+Validator (LLM-Qualitätscheck, optional)
+
+Schema Builder
+
+“Nicht nach ChatGPT” sicherstellen
+
+Das passiert primär durch Editor-Stage + Style Rules + Validator-Heuristiken, nicht durch “bitte menschlich”.
+
+Zusätzliche Kontrolle: “banned phrases”, repetitiveness checks, generic-claim detector.
+
+7) Testsystem: “Herz-und-Nieren” (Pflicht)
+
+Ihr baut ein Test Harness, das Runs blockiert, wenn:
+
+FAIL-Regeln durchkommen
+
+Output-Contract bricht
+
+Adversarial Prompts nicht abgefangen werden
+
+Testarten:
+
+Unit (Validator checks)
+
+Integration (Writer→Validator loop)
+
+Adversarial (“ignore rules”, stuffing, clickbait)
+
+Regression (Snapshot outputs mit Toleranz)
+
+8) Betrieb: Monitoring, Refresh, Content Lifecycle
+
+Pro Seite speichert ihr:
+
+publish_date, last_reviewed, last_updated
+
+performance snapshot (GSC/GA4 optional)
+
+refresh trigger rules (Traffic drop, query shift, new competitor angle)
+
+Refresh Pipeline:
+
+ingest new data → compare → propose diffs → re-validate → export patch
+
+9) Governance: Versioning, Release, Auditability
+
+Jede Änderung an Rules/Blueprints/Prompts = neue Version
+
+Jede Generierung schreibt Run-Snapshot (Inputs + Versions + Output + QA Report)
+
+“Strict production” profile lässt nur PASS zu
+
+10) Pack Activation & Resolution
+
+Pack Registry: Welche Packs existieren (global, page_type, option)
+
+Run Profiles: Aktivieren Packs pro Run (DE/EN/DE+EN, strict/draft/refresh)
+
+Resolution Order: shared baseline → tenant overrides → run_profile
+
+Impact: Regeländerungen in aktivierten Packs gelten automatisch im nächsten Run
+
+Gates: fehlende Pflichtdaten = NEEDS_INPUT, FAIL = BLOCK

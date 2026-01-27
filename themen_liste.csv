@@ -1,0 +1,273 @@
+A) Strategy & Governance
+
+a-seo-charter — SEO Charter (Scope, Prinzipien, Ziele)
+
+a-kpi-tree — KPI Tree (Business → SEO → Page)
+
+a-definition-of-done — Definition of Done pro Page Type
+
+a-raci-ownership — RACI & Ownership
+
+a-qa-gates — QA Gates & Release Checklists
+
+a-backlog-priority — SEO Backlog & Priorisierungssystem
+
+a-competitor-baseline — Competitor Baseline & SERP-Benchmarking
+
+a-authority-governance — Authority/Off-Page Governance (Digital PR/Links) (Edge/Optional)
+
+a-change-management — Change-/Release-Management für SEO (Rollouts, Rollbacks, Freeze)
+
+a-incident-response — SEO Incident Response (Traffic Drop / Indexing Outage Playbooks)
+
+a-docs-update-monitoring — Monitoring von Suchmaschinen-Doku/Policy Updates (Prozess, RSS/Changelog)
+
+a-surface-strategy — Search-Surface Strategie (Web/Discover/News/Video/Image) (Edge/Optional)
+
+
+
+B) Technical SEO Foundations
+
+b-robots-txt — robots.txt System (Regeln + Testcases)
+
+b-meta-robots-xrobots — Meta Robots & X-Robots-Tag Policy
+
+b-canonical-rules — Canonicalization Rules (Duplicate Control)
+
+b-rendering-strategy — Rendering Strategy (SSR/CSR/JS)
+
+b-js-links — JS-Link Extraction & Crawlability Checks
+
+b-status-policy — Status Code & Redirect Policy
+
+b-redirect-map — Redirect Mapping (Migration/Pruning)
+
+b-sitemap-strategy — Sitemap Strategy (Index + Child Sitemaps)
+
+b-logfile-seo — Log File SEO & Crawl Budget Monitoring
+
+b-site-migration-playbook — Site Migration/Relaunch Playbook (Pre/During/Post)
+
+b-hreflang-geo-redirect-policy — Geo-Redirect/Language Switch Policy (hreflang-safe)
+
+b-hack-spam-hardening — Hack-Spam/Malware Hardening (Security→Index Impact) (Edge/Optional)
+
+b-crawl-trap-detection — Crawl Traps Detection (Filter, Kalender, interne Suche, Infinite Spaces)
+
+
+
+C) Content Architecture & IA
+
+c-taxonomy-spec — Taxonomy Spec (Kategorien/Tags/Entities)
+
+c-hub-spoke — Hub/Spoke Cluster Blueprint
+
+c-nav-breadcrumbs — Navigation & Breadcrumb System
+
+c-pagination-facets — Pagination & Faceted Navigation Policy
+
+c-template-inventory — Template Inventory & Slot-Regeln
+
+
+
+D) Keyword/Intent/Entity Systems
+
+d-keyword-research — Keyword Research System (Seed → Expand → Qualify)
+
+d-serp-features — SERP Feature Mapping (Rich Results/Features)
+
+d-clustering-rules — Keyword Clustering Rules
+
+d-keyword-url-map — Keyword→URL Mapping (Cannibalization Guardrails)
+
+d-entity-graph — Entity Graph & Semantik-System
+
+d-search-surface-mapping — Keyword→Surface Mapping (Web vs Video/Image/Discover) (Edge/Optional)
+
+d-brand-serp-ownership — Brand-SERP Ownership (Brand Queries, Sitelinks, Knowledge-Ecosystem) (Edge/Optional)
+
+
+
+E) On-Page Content Production
+
+e-content-brief — Content Brief Template (data-first)
+
+e-outline-rules — Outline & Section Rules (H-Struktur)
+
+e-editorial-policy — Editorial Policy & Author System (E-E-A-T)
+
+e-source-policy — Citation/Source Policy (Claims & Belege)
+
+e-media-seo — Media SEO (Images/Video/Transcripts)
+
+e-a11y-basics — SEO-relevante Accessibility Basics (Headings/Alt/Keyboard)
+
+e-faq-howto — FAQ/HowTo Modules (Content + Eligibility)
+
+e-ugc-seo-policy — UGC SEO Policy (Kommentare/Foren: Moderation, Indexation, Links) (Edge/Optional)
+
+e-content-syndication-policy — Syndication/Republishing Policy (Duplicate-Kontrolle, Canonicals) (Edge/Optional)
+
+e-newsroom-workflow — Publisher/Newsroom Workflow (Edge/Optional)
+
+
+
+F) Meta & Snippets
+
+f-meta-rules — Meta Rules per Page Type (Title/Description System)
+
+f-snippet-tests — Snippet Testing & CTR Experiments
+
+f-og-twitter — OpenGraph/Twitter Cards (Social Snippets)
+
+
+
+G) Structured Data (Schema.org JSON-LD)
+
+g-global-schema — Global Schema (Organization/WebSite/WebPage)
+
+g-breadcrumb-schema — BreadcrumbList Schema
+
+g-article-schema — Article/BlogPosting Schema
+
+g-product-schema — Product/Offer Schema (Edge/Optional)
+
+g-localbusiness-schema — LocalBusiness Schema (Local)
+
+g-schema-consistency — Schema Consistency Rules (@id, sameAs, Entity-Konsistenz)
+
+
+
+H) Internal Linking & Page Relationships
+
+h-link-strategy — Internal Linking Strategy (Linkgraph Regeln)
+
+h-anchor-policy — Anchor Text Policy (Over-Optimization Schutz)
+
+h-orphans-broken — Orphan/Broken Link Detection & Fix Workflow
+
+h-link-attributes-policy — Link Attribute Policy (nofollow/ugc/sponsored) (Edge/Optional)
+
+
+
+I) CRO/UX for SEO Pages
+
+i-hero-cta — Hero/CTA Blueprint (Above-the-fold)
+
+i-trust-proof — Trust & Proof System (Cases, Logos, Reviews)
+
+i-form-ux — Form UX Rules + Event Mapping (Friction Removal)
+
+
+
+J) Performance & Core Web Vitals
+
+j-cwv-targets — CWV Targets & Monitoring (LCP/INP/CLS)
+
+j-perf-budget — Performance Budget (Release Gate)
+
+j-images — Image Optimization System (srcset/lazy/compress)
+
+j-fonts-thirdparty — Fonts & Third-Party Script Policy
+
+
+
+K) International SEO & Language Variations
+
+k-hreflang-rules — hreflang Rules (inkl. x-default)
+
+k-locale-mapping — Language/Region Mapping (Locale Codes)
+
+k-translation-workflow — Translation Workflow + QA
+
+k-intl-duplicate-control — International Duplicate Control (hreflang/canonical)
+
+
+
+L) Local SEO
+
+l-gbp-ops — Google Business Profile Operations
+
+l-nap-consistency — NAP Consistency System
+
+l-location-pages — Location Page Blueprint (Local Intent)
+
+l-review-strategy — Review Strategy & SOP
+
+l-offsite-reputation — Off-site Reviews/Reputation (Plattformen/Verzeichnisse) (Edge/Optional)
+
+
+
+M) Content Operations
+
+m-editorial-workflow — Editorial Workflow (Draft→Review→Publish)
+
+m-versioning — Content Versioning & Change Logs
+
+m-content-decay — Content Decay Monitoring & Refresh Queue
+
+m-pruning-redirects — Content Pruning & Redirect SOP
+
+
+
+N) Compliance & Risk
+
+n-gdpr-rules — GDPR/DSGVO Rules (Vendors/Legal Basis)
+
+n-cookie-banner-spec — Cookie Banner / Consent Spec
+
+n-claims-policy — Claims/Disclaimer Policy (YMYL-Risiko)
+
+n-a11y-compliance-edge — Accessibility Compliance Audit Plan (Edge/Optional)
+
+n-spam-policy-compliance — Spam-Policy Compliance Checklist (Sitewide Risk Controls)
+
+n-site-reputation-abuse-controls — Controls gegen Site Reputation Abuse / “Parasite SEO” (Edge/Optional)
+
+n-manual-actions-playbook — Manual Actions & Reconsideration Playbook (Edge/Optional)
+
+
+
+O) Analytics & Measurement
+
+o-measurement-plan — Measurement Plan (Events/Conversions/KPIs)
+
+o-gsc-monitoring — GSC Monitoring + Alerts
+
+o-seo-ab-testing — SEO A/B Testing SOP (Edge/Optional)
+
+o-surface-reporting — Surface Reporting (Web/Discover/News/Video/Image getrennt) (Edge/Optional)
+
+o-alerting-anomaly-detection — Anomaly Detection & Alerting (Index/CTR/Clicks/Errors)
+
+
+
+P) AI & Automation Layer
+
+p-prompt-library — Prompt Library pro Page Type
+
+p-rag-sources — RAG Source Governance (Allowlist/Policies)
+
+p-hitl — Human-in-the-Loop Review Gates (Risk-based)
+
+p-qa-automation — Automated SEO QA (Lint/Validators, Build-Fails)
+
+
+
+Q) Files & Protocols
+
+q-robots-txt — robots.txt File (Versioning)
+
+q-xml-sitemaps — XML Sitemaps (Index + Regeln)
+
+q-rss-atom — RSS/Atom Feeds (Edge/Optional)
+
+q-llms-txt — llms.txt Policy & Update Workflow (Edge/Optional)
+
+q-security-headers — Security Headers Baseline (SEO-relevant)
+
+q-news-sitemap — News Sitemap (Edge/Optional)
+
+q-image-video-sitemaps — Image/Video Sitemaps (Edge/Optional)
+
+q-feed-for-discover — Discover Monitoring/Eligibility Setup (Prozess + Reporting) (Edge/Optional)

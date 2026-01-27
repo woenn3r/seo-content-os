@@ -1,0 +1,24 @@
+{
+  "name": "seo-content-os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tenant:create": "node --import tsx tools/create_tenant.ts",
+    "page:create": "node --import tsx tools/create_page.ts",
+    "intake:run": "node --import tsx tools/run_intake.ts",
+    "run": "node --import tsx tools/run_pipeline.ts",
+    "revise": "node --import tsx tools/revise_page.ts",
+    "secrets:check": "node --import tsx tools/secrets_check.ts",
+    "validate:registries": "node --import tsx tools/validate_registries.ts",
+    "scaffold:topics": "node --import tsx tools/scaffold_topics.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ajv": "^8.12.0",
+    "csv-parse": "^5.5.0",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

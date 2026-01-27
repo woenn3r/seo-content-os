@@ -1,0 +1,2 @@
+asset_id,asset_type,scope,topic_id,pack_id,version,path,status,replaces_asset_id,created_at,last_reviewed_at,owner,notes
+asset_schema_pagepackage_v1,contract_schema|rulepack|promptpack|connector|config|code_module|test_fixture,shared|tenant,g-schema-consistency,opt_schema_strict_v1,v1,seo_content_os_scaffold_v4/shared/contracts/v1/pagepackage.schema.json,active|deprecated,,YYYY-MM-DD,YYYY-MM-DD,dev|operator,Single source of truth for schema validation.

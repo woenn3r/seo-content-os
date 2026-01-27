@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "fail_rules": [],
+  "warn_rules": [],
+  "fix_list": [],
+  "completeness_score": 100,
+  "checks_run": 22,
+  "rule_score": 100,
+  "assumptions": [
+    "Die Hinweise zu Tonalität und verbotenen Formulierungen wurden berücksichtigt.",
+    "Die Struktur entspricht einem kommerziellen Service-Seitentyp für KMU als Zielgruppe."
+  ],
+  "top_issues": [],
+  "missing_data_policy": "block"
+}

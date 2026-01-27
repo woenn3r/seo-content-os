@@ -1,0 +1,19 @@
+rule_id,severity,scope,applies_to,page_types,languages,intents,check_name,params_json,message,fix_instructions,source_url,version,enabled,notes
+REQUIRE_SITE_SNAPSHOT_FOR_EXISTING_SITE,fail,global,project,*,*,*,require_site_snapshot,"{""required_if_site_state"":""existing""}","Site snapshot required for existing site.","Run crawl to create or refresh the site snapshot.",,v1,yes,
+TITLE_LENGTH,warn,page,page,*,de,en,*,title_length,"{""min"":30,""max"":65}","Title length outside target range.","Adjust title to 30-65 characters.",,v1,yes,
+TITLE_PRIMARY_KEYWORD,warn,page,page,*,*,*,title_includes_primary_keyword,,"Title missing primary keyword.","Include the primary keyword in the title.",,v1,yes,
+META_DESCRIPTION_LENGTH,warn,page,page,*,de,en,*,meta_description_length,"{""min"":70,""max"":160}","Meta description length outside target range.","Adjust description to 70-160 characters.",,v1,yes,
+META_DESCRIPTION_PRIMARY_KEYWORD,warn,page,page,*,*,*,meta_description_includes_primary_keyword,,"Meta description missing primary keyword.","Include the primary keyword in the meta description.",,v1,yes,
+SLUG_FORMAT,fail,page,page,*,*,*,slug_format,"{""max_length"":80}","Slug format invalid.","Use lowercase letters, numbers, and hyphens only; keep slug short.",,v1,yes,
+SLUG_PRIMARY_KEYWORD,warn,page,page,*,*,*,slug_includes_primary_keyword,,"Slug missing primary keyword.","Include the primary keyword in the slug.",,v1,yes,
+H1_PRESENT,fail,page,page,*,*,*,h1_present,,"H1 missing.","Add a single H1 headline.",,v1,yes,
+H1_SINGLE,fail,page,page,*,*,*,h1_single,,"Multiple H1 detected.","Ensure exactly one H1.",,v1,yes,
+H1_PRIMARY_KEYWORD,warn,page,page,*,*,*,h1_includes_primary_keyword,,"H1 missing primary keyword.","Include the primary keyword in the H1.",,v1,yes,
+KEYWORD_STUFFING,warn,page,page,*,*,*,keyword_stuffing,"{""warn_density"":0.025,""block_density"":0.04,""min_body_chars"":300}","Keyword density too high.","Reduce repeated use of the primary keyword.",,v1,yes,
+SECTIONS_HEADING_PRESENT,fail,page,page,*,*,*,sections_heading_present,,"Section heading missing.","Add a heading for each section.",,v1,yes,
+FAQ_ITEMS_COMPLETE,warn,page,page,*,*,*,faq_items_complete,,"FAQ item missing question or answer.","Ensure each FAQ item has a question and answer.",,v1,yes,
+IMAGES_ALT_PRESENT,warn,page,page,*,*,*,images_alt_present,,"Image alt text missing.","Provide alt text for each image.",,v1,yes,
+DUPLICATE_CONTENT_RISK,warn,page,page,*,*,*,duplicate_content_risk,"{""min_similarity"":0.85}","Duplicate content risk detected.","Differentiate content or canonicalize.",,v1,yes,
+CANNIBALIZATION_CONFLICT,warn,page,page,*,*,*,cannibalization_conflict,,"Keyword cannibalization detected.","Consolidate or differentiate target pages.",,v1,yes,
+CONNECTOR_GSC_REQUIRED_WHEN_ENABLED,fail,global,project,*,*,*,connector_required,"{""connector_id"":""gsc""}","GSC required when enabled.","Connect GSC for this tenant.",,v1,no,Enforced by preflight.
+CONNECTOR_OPENAI_REQUIRED_IN_STRICT_PRODUCTION,fail,global,project,*,*,*,connector_required,"{""connector_id"":""openai"",""mode"":""strict_production""}","OpenAI required in strict production.","Set OPENAI_API_KEY.",,v1,no,Enforced by preflight.

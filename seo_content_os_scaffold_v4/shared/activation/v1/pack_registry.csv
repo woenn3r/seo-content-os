@@ -1,0 +1,31 @@
+pack_id,pack_type,description,default_enabled,applies_to_page_types,applies_to_languages,notes
+contracts_v1,contract,JSON Schemas (PageSpec/PagePackage) für Output- & Input-Contracts.,yes,*,*,Pflicht für jeden Run.
+blueprints_v1,blueprint,"Baseline Blueprints (Sections, Reihenfolge, min/max Wörter) für alle Page Types.",yes,*,*,Tenant kann über blueprints_overrides überschreiben.
+promptpack_v1,promptpack,Baseline Prompts (planner/writer/editor/validator/schema) – versioniert.,yes,*,*,Tenant kann per prompts_overrides anpassen.
+rules_global_v1,rulepack,Globale SEO/Content Best Practices (FAIL/WARN) – gilt für alle Seiten.,yes,*,*,Immer aktiv in strict_production.
+thresholds_global_v1,thresholdpack,Globale Schwellenwerte (Heuristiken) – z.B. Längen/Minima.,no,*,*,Optional; in strict meist aktiviert.
+rules_page_homepage_v1,rulepack,"Homepage spezifische Regeln (Hero, Navigation, Trust, CTA).",no,homepage,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_homepage_v1,thresholdpack,Schwellenwerte/Heuristiken für homepage.,no,homepage,*,
+rules_page_service_page_v1,rulepack,"Service Page Regeln (Intent, Offer-Structure, Proof, CTA).",no,service_page,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_service_page_v1,thresholdpack,Schwellenwerte/Heuristiken für service_page.,no,service_page,*,
+rules_page_blog_guide_v1,rulepack,"Blog/Guide Regeln (People-first, Depth, Beispiele, FAQ).",no,blog_guide,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_blog_guide_v1,thresholdpack,Schwellenwerte/Heuristiken für blog_guide.,no,blog_guide,*,
+rules_page_category_page_v1,rulepack,"Kategorie/Collection Regeln (Facets, Intro, Internal linking).",no,category_page,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_category_page_v1,thresholdpack,Schwellenwerte/Heuristiken für category_page.,no,category_page,*,
+rules_page_product_page_v1,rulepack,"Produkt Regeln (Specs, benefits, FAQs, structured data).",no,product_page,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_product_page_v1,thresholdpack,Schwellenwerte/Heuristiken für product_page.,no,product_page,*,
+rules_page_local_landing_v1,rulepack,"Local Landing Regeln (Location intent, NAP, GBP, service-area).",no,local_landing,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_local_landing_v1,thresholdpack,Schwellenwerte/Heuristiken für local_landing.,no,local_landing,*,
+rules_page_faq_page_v1,rulepack,"FAQ Regeln (Question-first, concise answers, schema usage).",no,faq_page,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_faq_page_v1,thresholdpack,Schwellenwerte/Heuristiken für faq_page.,no,faq_page,*,
+rules_page_comparison_page_v1,rulepack,"Comparison Regeln (fair comparison, table, alternatives).",no,comparison_page,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_comparison_page_v1,thresholdpack,Schwellenwerte/Heuristiken für comparison_page.,no,comparison_page,*,
+rules_page_docs_page_v1,rulepack,"Docs/KB Regeln (task-first, steps, troubleshooting).",no,docs_page,*,Aktivieren via run_profile für diesen page_type.
+thresholds_page_docs_page_v1,thresholdpack,Schwellenwerte/Heuristiken für docs_page.,no,docs_page,*,
+opt_internal_linking_v1,optionpack,"Regeln für interne Verlinkung (Slots, Anchors, Crawlability, Hub/Spoke).",no,*,*,Empfohlen für fast alle Runs.
+opt_schema_strict_v1,optionpack,Strikte Schema/JSON-LD Regeln + Konsistenz zu sichtbarem Content.,no,*,*,Für Seiten mit Rich Results relevant.
+opt_local_seo_v1,optionpack,"Local SEO Regeln (NAP, Service Areas, GBP, Location pages).",no,local_landing,*,"Aktiv, wenn lokale Seiten/Standorte existieren."
+opt_international_seo_v1,optionpack,"International SEO Regeln (hreflang, locale, translation/localization, canonical).",no,*,*,"Aktiv, wenn mehrsprachig/mehrere Regionen."
+opt_ecommerce_v1,optionpack,"E-Commerce Regeln (Category/Product, pricing, availability, returns).",no,"category_page,product_page",*,Aktiv für Shops/Catalogs.
+opt_eeat_blocks_v1,optionpack,"E-E-A-T Blocks Regeln (Author, credentials, sources, review dates).",no,"blog_guide,docs_page,about_page",*,Je nach Website/Branche.
+opt_anti_ai_tone_v1,optionpack,"Anti-KI-Ton Regeln (No fluff, no clichés, repetition checks).",no,*,*,Sehr empfohlen für alle Copy-Runs.

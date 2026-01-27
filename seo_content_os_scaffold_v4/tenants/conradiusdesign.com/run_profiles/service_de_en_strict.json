@@ -1,0 +1,28 @@
+{
+  "profile_id": "service_de_en_strict",
+  "mode": "strict_production",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "regions": [
+    "default"
+  ],
+  "require_site_snapshot": true,
+  "snapshot_ttl_hours": 168,
+  "blueprint_pack": "shared/blueprints/v1",
+  "rule_packs": [
+    "rules_global_v1",
+    "rules_page_service_page_v1",
+    "opt_internal_linking_v1",
+    "opt_schema_strict_v1",
+    "opt_anti_ai_tone_v1",
+    "opt_international_seo_v1"
+  ],
+  "prompt_pack": "shared/promptpacks/v1",
+  "contracts_version": "shared/contracts/v1",
+  "blocking_policy": {
+    "fail": "block",
+    "warn": "allow"
+  }
+}

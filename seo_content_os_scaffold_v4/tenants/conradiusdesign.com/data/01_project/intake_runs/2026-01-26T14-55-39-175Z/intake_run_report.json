@@ -1,0 +1,376 @@
+{
+  "answered": [
+    "WS_DOMAIN",
+    "WS_BRAND_NAME",
+    "WS_PRIMARY_GOAL",
+    "WS_LANGUAGES",
+    "WS_REGIONS",
+    "WS_URL_STRATEGY",
+    "WS_FORMALITY_DE",
+    "WS_TOV_ADJECTIVES",
+    "WS_TOV_DO",
+    "WS_TOV_DONT",
+    "WS_BANNED_CLAIMS",
+    "WS_OFFERS_LIST",
+    "WS_USPS",
+    "WS_PROOF_ASSETS",
+    "WS_PRICING_NOTES",
+    "WS_PRIMARY_CTA",
+    "WS_SECONDARY_CTA",
+    "WS_COMPANY_LEGAL_NAME",
+    "WS_CONTACT_EMAIL",
+    "WS_CONTACT_PHONE",
+    "WS_ADDRESS",
+    "WS_SOCIAL_URLS",
+    "WS_LOGO_URL",
+    "SEO_SEED_KEYWORDS",
+    "SEO_COMPETITORS",
+    "SEO_ALLOW_EXTERNAL_SOURCES",
+    "SEO_SEMRUSH_IMPORT",
+    "INTL_TRANSLATION_STRATEGY",
+    "INTL_TERMS_GLOSSARY",
+    "INTL_HREFLANG_STRICT",
+    "LOCAL_HAS_LOCATIONS",
+    "ECOM_ENABLED",
+    "PG_PAGE_ID",
+    "PG_PAGE_TYPE",
+    "PG_LANGUAGE",
+    "PG_REGION",
+    "PG_TARGET_URL",
+    "PG_INTENT",
+    "PG_PRIMARY_KEYWORD",
+    "PG_SECONDARY_KEYWORDS",
+    "PG_CLUSTER_ID",
+    "PG_AUDIENCE",
+    "PG_AWARENESS_STAGE",
+    "PG_OFFER_ID",
+    "PG_USPS",
+    "PG_PROOF",
+    "PG_PRIMARY_CTA",
+    "PG_SECONDARY_CTA",
+    "PG_MUST_INCLUDE",
+    "PG_MUST_AVOID",
+    "PG_INTERNAL_LINK_TARGETS",
+    "PG_FAQ_QUESTIONS"
+  ],
+  "skipped": [
+    {
+      "question_id": "WS_FORMALITY_EN",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "SEO_ALLOWED_SOURCES",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "INTL_ENABLED",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "LOCAL_LOCATIONS_LIST",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "LOCAL_SERVICE_AREAS",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "LOCAL_GBP_URLS",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "LOCAL_LOCATION_PAGES",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "ECOM_CURRENCY",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "ECOM_SHIPPING_RETURNS",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "PG_SOURCE_URLS",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "PG_LOCAL_CITY",
+      "reason": "condition_false"
+    },
+    {
+      "question_id": "PG_ECOM_PRODUCT_ID",
+      "reason": "condition_false"
+    }
+  ],
+  "missing_required": [],
+  "errors": [],
+  "written": [
+    {
+      "question_id": "WS_DOMAIN",
+      "target_file": "01_project_config.csv",
+      "target_field": "base_domain"
+    },
+    {
+      "question_id": "WS_BRAND_NAME",
+      "target_file": "01_project_config.csv",
+      "target_field": "brand_name"
+    },
+    {
+      "question_id": "WS_PRIMARY_GOAL",
+      "target_file": "01_project_config.csv",
+      "target_field": "primary_goal"
+    },
+    {
+      "question_id": "WS_LANGUAGES",
+      "target_file": "01_project_config.csv",
+      "target_field": "languages"
+    },
+    {
+      "question_id": "WS_REGIONS",
+      "target_file": "01_project_config.csv",
+      "target_field": "regions"
+    },
+    {
+      "question_id": "WS_URL_STRATEGY",
+      "target_file": "01_project_config.csv",
+      "target_field": "url_language_strategy"
+    },
+    {
+      "question_id": "WS_FORMALITY_DE",
+      "target_file": "01_project_config.csv",
+      "target_field": "formality_de"
+    },
+    {
+      "question_id": "WS_TOV_ADJECTIVES",
+      "target_file": "02_brand_voice_rules.csv",
+      "target_field": "rule_text"
+    },
+    {
+      "question_id": "WS_TOV_DO",
+      "target_file": "02_brand_voice_rules.csv",
+      "target_field": "rule_text"
+    },
+    {
+      "question_id": "WS_TOV_DONT",
+      "target_file": "02_brand_voice_rules.csv",
+      "target_field": "rule_text"
+    },
+    {
+      "question_id": "WS_BANNED_CLAIMS",
+      "target_file": "02_brand_voice_rules.csv",
+      "target_field": "rule_text"
+    },
+    {
+      "question_id": "WS_OFFERS_LIST",
+      "target_file": "04_offer_catalog.csv",
+      "target_field": "offer_name"
+    },
+    {
+      "question_id": "WS_USPS",
+      "target_file": "04_offer_catalog.csv",
+      "target_field": "short_promise"
+    },
+    {
+      "question_id": "WS_PROOF_ASSETS",
+      "target_file": "04_offer_catalog.csv",
+      "target_field": "proof_assets"
+    },
+    {
+      "question_id": "WS_PRICING_NOTES",
+      "target_file": "04_offer_catalog.csv",
+      "target_field": "pricing_notes"
+    },
+    {
+      "question_id": "WS_PRIMARY_CTA",
+      "target_file": "04_offer_catalog.csv",
+      "target_field": "primary_cta"
+    },
+    {
+      "question_id": "WS_SECONDARY_CTA",
+      "target_file": "04_offer_catalog.csv",
+      "target_field": "secondary_cta"
+    },
+    {
+      "question_id": "WS_COMPANY_LEGAL_NAME",
+      "target_file": "03_entity_catalog.csv",
+      "target_field": "name"
+    },
+    {
+      "question_id": "WS_CONTACT_EMAIL",
+      "target_file": "03_entity_catalog.csv",
+      "target_field": "email"
+    },
+    {
+      "question_id": "WS_CONTACT_PHONE",
+      "target_file": "03_entity_catalog.csv",
+      "target_field": "phone"
+    },
+    {
+      "question_id": "WS_ADDRESS",
+      "target_file": "03_entity_catalog.csv",
+      "target_field": "street|postal_code|city|country"
+    },
+    {
+      "question_id": "WS_SOCIAL_URLS",
+      "target_file": "03_entity_catalog.csv",
+      "target_field": "same_as_urls"
+    },
+    {
+      "question_id": "WS_LOGO_URL",
+      "target_file": "03_entity_catalog.csv",
+      "target_field": "logo_url"
+    },
+    {
+      "question_id": "SEO_SEED_KEYWORDS",
+      "target_file": "08_semrush_keywords_import.csv",
+      "target_field": "keyword"
+    },
+    {
+      "question_id": "SEO_COMPETITORS",
+      "target_file": "01_project_config.csv",
+      "target_field": "competitor_urls"
+    },
+    {
+      "question_id": "SEO_ALLOW_EXTERNAL_SOURCES",
+      "target_file": "01_project_config.csv",
+      "target_field": "allow_external_sources"
+    },
+    {
+      "question_id": "SEO_SEMRUSH_IMPORT",
+      "target_file": "01_project_config.csv",
+      "target_field": "semrush_import_available"
+    },
+    {
+      "question_id": "INTL_TRANSLATION_STRATEGY",
+      "target_file": "01_project_config.csv",
+      "target_field": "translation_strategy"
+    },
+    {
+      "question_id": "INTL_TERMS_GLOSSARY",
+      "target_file": "01_project_config.csv",
+      "target_field": "has_glossary"
+    },
+    {
+      "question_id": "INTL_HREFLANG_STRICT",
+      "target_file": "01_project_config.csv",
+      "target_field": "hreflang_strict"
+    },
+    {
+      "question_id": "LOCAL_HAS_LOCATIONS",
+      "target_file": "01_project_config.csv",
+      "target_field": "has_locations"
+    },
+    {
+      "question_id": "ECOM_ENABLED",
+      "target_file": "01_project_config.csv",
+      "target_field": "is_ecommerce"
+    },
+    {
+      "question_id": "PG_PAGE_ID",
+      "target_file": "11_pagespec.csv",
+      "target_field": "page_id"
+    },
+    {
+      "question_id": "PG_PAGE_TYPE",
+      "target_file": "11_pagespec.csv",
+      "target_field": "page_type"
+    },
+    {
+      "question_id": "PG_LANGUAGE",
+      "target_file": "11_pagespec.csv",
+      "target_field": "language"
+    },
+    {
+      "question_id": "PG_REGION",
+      "target_file": "11_pagespec.csv",
+      "target_field": "region"
+    },
+    {
+      "question_id": "PG_TARGET_URL",
+      "target_file": "11_pagespec.csv",
+      "target_field": "target_url"
+    },
+    {
+      "question_id": "PG_INTENT",
+      "target_file": "11_pagespec.csv",
+      "target_field": "intent"
+    },
+    {
+      "question_id": "PG_PRIMARY_KEYWORD",
+      "target_file": "11_pagespec.csv",
+      "target_field": "primary_keyword"
+    },
+    {
+      "question_id": "PG_SECONDARY_KEYWORDS",
+      "target_file": "11_pagespec.csv",
+      "target_field": "secondary_keywords"
+    },
+    {
+      "question_id": "PG_CLUSTER_ID",
+      "target_file": "10_page_map.csv",
+      "target_field": "cluster_id"
+    },
+    {
+      "question_id": "PG_CLUSTER_ID",
+      "target_file": "11_pagespec.csv",
+      "target_field": "cluster_id"
+    },
+    {
+      "question_id": "PG_AUDIENCE",
+      "target_file": "11_pagespec.csv",
+      "target_field": "audience"
+    },
+    {
+      "question_id": "PG_AWARENESS_STAGE",
+      "target_file": "11_pagespec.csv",
+      "target_field": "awareness_stage"
+    },
+    {
+      "question_id": "PG_OFFER_ID",
+      "target_file": "11_pagespec.csv",
+      "target_field": "offer_id"
+    },
+    {
+      "question_id": "PG_USPS",
+      "target_file": "11_pagespec.csv",
+      "target_field": "usps"
+    },
+    {
+      "question_id": "PG_PROOF",
+      "target_file": "11_pagespec.csv",
+      "target_field": "proof_assets"
+    },
+    {
+      "question_id": "PG_PRIMARY_CTA",
+      "target_file": "11_pagespec.csv",
+      "target_field": "primary_cta"
+    },
+    {
+      "question_id": "PG_SECONDARY_CTA",
+      "target_file": "11_pagespec.csv",
+      "target_field": "secondary_cta"
+    },
+    {
+      "question_id": "PG_MUST_INCLUDE",
+      "target_file": "11_pagespec.csv",
+      "target_field": "must_include_points"
+    },
+    {
+      "question_id": "PG_MUST_AVOID",
+      "target_file": "11_pagespec.csv",
+      "target_field": "must_avoid_points"
+    },
+    {
+      "question_id": "PG_INTERNAL_LINK_TARGETS",
+      "target_file": "11_pagespec.csv",
+      "target_field": "internal_links_out"
+    },
+    {
+      "question_id": "PG_FAQ_QUESTIONS",
+      "target_file": "11_pagespec.csv",
+      "target_field": "faq_questions"
+    }
+  ],
+  "placeholders": []
+}

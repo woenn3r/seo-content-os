@@ -1,0 +1,6 @@
+key,value,notes
+site_state,,"existing|new"
+gsc_enabled,no,"yes|no"
+gsc_connected,no,"yes|no"
+gsc_site_url,,
+psi_enabled,no,"yes|no"

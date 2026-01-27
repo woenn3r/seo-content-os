@@ -1,0 +1,9 @@
+---
+topic_id: g-global-schema
+title: Global Schema (Organization/WebSite/WebPage)
+scope: global+tenant
+applies_to: [any_content_page]
+version: v1
+status: draft
+supersedes: []
+---

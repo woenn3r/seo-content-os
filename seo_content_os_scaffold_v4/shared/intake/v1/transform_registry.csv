@@ -1,0 +1,10 @@
+transform_hint,input_shape,output_target,example,notes
+upsert_kv,"single value","key/value csv (target_field as key)","WS_DOMAIN -> key=base_domain, value=example.com",Used for project_config key/value store.
+split_comma,"comma-separated list","single field string (comma normalized)","a,b,c -> a,b,c",Used when CSV expects comma-joined list.
+split_lines,"newline-separated list","single field string (newline normalized)","a\nb -> a\nb",Used for must_include/must_avoid.
+split_comma_to_rows,"comma-separated list","one row per item","a,b -> two rows",Used for imports like SEMrush keywords.
+to_offer_rows,"comma/newline list","offer rows in 04_offer_catalog.csv","SEO Beratung -> offer_id+offer_name",Generates minimal offer rows.
+map_to_usps,"comma/newline list","04_offer_catalog.csv short_promise + detailed_description","USP1,USP2",First item = short_promise, rest = detailed_description.
+to_rule_rows,"comma/newline list","02_brand_voice_rules.csv rows","Do X, Don't Y",Creates rule rows with warn severity.
+parse_address,"comma-separated fields","entity address columns","Street,12345,City,DE",Maps to street/postal_code/city/country.
+to_location_entities,"newline list (address|phone)","03_entity_catalog.csv rows","Berlin|+49...",Creates location entities.

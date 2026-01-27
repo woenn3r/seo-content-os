@@ -1,0 +1,4 @@
+connector_id,scope,required_by_pack_ids,required_by_modes,secrets_path_template,config_keys,test_endpoint,failure_policy_default
+openai,global,,strict_production,secrets/openai.env,openai_enabled=yes,https://api.openai.com/v1/models,block
+gsc,tenant,,,secrets/tenants/{tenant}/google_gsc_token.json,gsc_enabled=yes,https://www.googleapis.com/webmasters/v3/sites,block
+rybbit,tenant,,,secrets/tenants/{tenant}/rybbit.env,rybbit_enabled=yes,,warn
